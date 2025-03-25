@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -19,6 +20,11 @@
   }
 }
 
+@layer utilities{
+  .heading {
+    @apply uppercase bg-black w-full py-4 font-extrabold text-white sm:text-[54px] sm:leading-[64px] text-[36px] leading-[46px] max-w-5xl text-center my-3
+  }
+}
 body {
   background: var(--background);
   color: var(--foreground);
