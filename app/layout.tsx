@@ -39,11 +39,6 @@ const winkySans = localFont({
       weight: "900",
       style: "normal",
     },
-    {
-      path: "./fonts/WinkySans-Thin.ttf",
-      weight: "200",
-      style: "normal",
-    },
   ],
   variable: "--font-winky-sans",
 });
