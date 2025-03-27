@@ -9,7 +9,7 @@ const SearchForm=({query}:{query?:string})=> {
       <input name="query" placeholder='search nearby boutiques' defaultValue="" className='flex-1 font-bold placeholder:font-semibold placeholder:text-black-100 w-full h-auto outline-none'/>
       <div className='flex gap-2'>
         {query && <SearchFormReset/>}
-        <button type='submit' className='size-[50px] rounded-full bg-black flex justify-center items-center !important'>
+        <button type='submit' className='size-[40px] rounded-full bg-black flex justify-center items-center text-white !important'>
           <Search className='size-5'/>
         </button>
       </div>
