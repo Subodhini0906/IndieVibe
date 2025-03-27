@@ -1,5 +1,7 @@
 //import Image from "next/image";
 
+import SearchForm from "../components/SearchForm";
+
 export default function Home() {
   return (
     <>
@@ -12,6 +14,7 @@ export default function Home() {
       <p className="font-medium mt-6 text-3xl text-black max-w-2xl text-center break-words">
         Elevate Your Wardrobe, Elevate Your Career
       </p>
+      <SearchForm/>
     </section>
     </>
   );
