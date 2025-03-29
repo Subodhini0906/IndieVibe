@@ -1,6 +1,7 @@
 
 import SearchForm from "../components/SearchForm";
 import Image from "next/image";
+import SliderSection from "../components/SliderSection";
 export default function Home() {
   return (
     <>
@@ -20,6 +21,9 @@ export default function Home() {
         </div>
       <SearchForm/>
       </div>
+    </section>
+    <section className="px-6 py-10 max-w-7xl mx-auto">
+      <SliderSection/>
     </section>
     </>
   );
