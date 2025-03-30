@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const SliderSection: React.FC = () => {
   return (
@@ -10,8 +9,7 @@ const SliderSection: React.FC = () => {
       <div className="container mx-auto px-4">
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Women's Boutique Section */}
-          <Link href='/pages/womensBoutiques'>
+          {/* Women's Boutique Section */}      
           <div className="relative overflow-hidden rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold mb-6 text-center">Women&apos;s Boutiques</h2>
             <div className="relative h-[400px] overflow-hidden">
@@ -49,9 +47,6 @@ const SliderSection: React.FC = () => {
               </div>
             </div>
           </div>
-          </Link>
-
-          {/* Men's Boutique Section */}
           <div className="relative overflow-hidden rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold mb-6 text-center">Men&apos;s Boutiques</h2>
             <div className="relative h-[400px] overflow-hidden">
