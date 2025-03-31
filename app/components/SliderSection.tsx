@@ -49,7 +49,8 @@ const SliderSection: React.FC = () => {
               </div>
             </div>
           </div>
-        </Link> 
+        </Link>
+        <Link href="/boutiques/men" className="block"> 
           <div className="relative overflow-hidden rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold mb-6 text-center">Men&apos;s Boutiques</h2>
             <div className="relative h-[400px] overflow-hidden">
@@ -87,7 +88,9 @@ const SliderSection: React.FC = () => {
               </div>
             </div>
           </div>
+          </Link>
         </div>
+      
       </div>
 
       <style jsx>{`
