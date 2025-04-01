@@ -19,7 +19,7 @@ const womensBoutiques = [
     id: 2,
     name: "Stitch & Style",
     description: "Contemporary designs with personalized fitting services for the modern woman.",
-    image: "/women.jpg",
+    image: "/women11.jpg",
     specialty: "Contemporary Fashion",
     location: "Westside Shopping Center",
     rating: 4.7
