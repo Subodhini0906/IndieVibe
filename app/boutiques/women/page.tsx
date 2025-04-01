@@ -28,7 +28,7 @@ const womensBoutiques = [
     id: 3,
     name: "Couture Collection",
     description: "High-end custom tailoring with imported fabrics and traditional craftsmanship.",
-    image: "/women1.avif",
+    image: "/women3.jpg",
     specialty: "Luxury Garments",
     location: "Fashion Avenue",
     rating: 4.9
@@ -37,7 +37,7 @@ const womensBoutiques = [
     id: 4,
     name: "Thread & Needle",
     description: "Affordable custom alterations and tailoring with quick turnaround times.",
-    image: "/women.jpg",
+    image: "/women4.webp",
     specialty: "Alterations & Repairs",
     location: "Central Market District",
     rating: 4.5
@@ -46,7 +46,7 @@ const womensBoutiques = [
     id: 5,
     name: "Fashion Forward",
     description: "Trendy designs and modern silhouettes for the fashion-conscious woman.",
-    image: "/women1.avif",
+    image: "/women5.jpg",
     specialty: "Trendy Designs",
     location: "Innovation Fashion Hub",
     rating: 4.6
@@ -55,7 +55,7 @@ const womensBoutiques = [
     id: 6,
     name: "Heritage Tailors",
     description: "Traditional techniques with a modern twist, specializing in cultural and heritage clothing.",
-    image: "/women.jpg",
+    image: "/women11.jpg",
     specialty: "Cultural & Heritage Wear",
     location: "Historical District",
     rating: 4.8
