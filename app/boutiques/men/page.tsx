@@ -28,7 +28,7 @@ const mensBoutiques = [
     id: 3,
     name: "Heritage & Cloth",
     description: "Traditional craftsmanship meets modern design for timeless men's apparel.",
-    image: "/men.avif",
+    image: "/men5.jpg",
     specialty: "Traditional Craftsmanship",
     location: "Old Town Square",
     rating: 4.8
@@ -37,7 +37,7 @@ const mensBoutiques = [
     id: 4,
     name: "Executive Style",
     description: "Business wear specialists offering custom tailoring for professional environments.",
-    image: "/men1.avif",
+    image: "/men6.jpg",
     specialty: "Business Attire",
     location: "Business Center",
     rating: 4.6
@@ -46,7 +46,7 @@ const mensBoutiques = [
     id: 5,
     name: "Stitch Masters",
     description: "Expert alterations and modifications for all types of men's clothing.",
-    image: "/men.avif",
+    image: "/men1.webp",
     specialty: "Alterations & Repairs",
     location: "Central District",
     rating: 4.5
@@ -55,7 +55,7 @@ const mensBoutiques = [
     id: 6,
     name: "Urban Threads",
     description: "Modern casual and streetwear with custom fits and unique designs.",
-    image: "/men1.avif",
+    image: "/men7.jpg",
     specialty: "Casual & Streetwear",
     location: "Downtown Promenade",
     rating: 4.7
