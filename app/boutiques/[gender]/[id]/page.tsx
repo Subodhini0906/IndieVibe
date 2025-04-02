@@ -157,6 +157,48 @@ const boutiquesData = {
         { author: "Lucas K.", rating: 5, comment: "The team at Modern Man transformed my wardrobe. Can't recommend enough." }
       ]
     },
+    {
+      id: 3,
+      name: "Heritage & cloths",
+      description: "Contemporary tailoring for the fashion-forward man with custom fits and modern styles.",
+      fullDescription: "Modern Man brings fresh perspective to men's tailoring with contemporary designs that push boundaries while maintaining exceptional quality and fit. We specialize in helping men express their individuality through clothing that is as unique as they are, with a focus on versatile pieces that transition seamlessly from work to evening.",
+      image: "/men1.avif",
+      gallery: ["/men1.avif", "/men.avif", "/men1.avif"],
+      specialty: "Contemporary Styling",
+      location: "Arts District",
+      address: "321 Creative Lane, Arts District",
+      phone: "(555) 456-7890",
+      email: "style@modernman.com",
+      hours: "Tue-Sat: 11am-8pm, Sun: 12pm-5pm",
+      services: ["Contemporary Tailoring", "Casual Wear", "Style Consultation", "Wardrobe Planning", "Limited Edition Pieces"],
+      rating: 4.7,
+      reviews: [
+        { author: "Noah P.", rating: 5, comment: "Finally found tailoring that matches my style. Modern cuts with perfect fit." },
+        { author: "Elijah S.", rating: 4, comment: "Great creative vision and excellent execution. Reasonable turnaround times too." },
+        { author: "Lucas K.", rating: 5, comment: "The team at Modern Man transformed my wardrobe. Can't recommend enough." }
+      ]
+    },
+    {
+      id: 4,
+      name: "Modern Man",
+      description: "Contemporary tailoring for the fashion-forward man with custom fits and modern styles.",
+      fullDescription: "Modern Man brings fresh perspective to men's tailoring with contemporary designs that push boundaries while maintaining exceptional quality and fit. We specialize in helping men express their individuality through clothing that is as unique as they are, with a focus on versatile pieces that transition seamlessly from work to evening.",
+      image: "/men1.avif",
+      gallery: ["/men1.avif", "/men.avif", "/men1.avif"],
+      specialty: "Contemporary Styling",
+      location: "Arts District",
+      address: "321 Creative Lane, Arts District",
+      phone: "(555) 456-7890",
+      email: "style@modernman.com",
+      hours: "Tue-Sat: 11am-8pm, Sun: 12pm-5pm",
+      services: ["Contemporary Tailoring", "Casual Wear", "Style Consultation", "Wardrobe Planning", "Limited Edition Pieces"],
+      rating: 4.7,
+      reviews: [
+        { author: "Noah P.", rating: 5, comment: "Finally found tailoring that matches my style. Modern cuts with perfect fit." },
+        { author: "Elijah S.", rating: 4, comment: "Great creative vision and excellent execution. Reasonable turnaround times too." },
+        { author: "Lucas K.", rating: 5, comment: "The team at Modern Man transformed my wardrobe. Can't recommend enough." }
+      ]
+    },
     // Additional men's boutiques would go here
   ]
 };
