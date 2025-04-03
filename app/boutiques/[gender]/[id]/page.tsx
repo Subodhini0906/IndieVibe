@@ -51,7 +51,7 @@ const boutiquesData = {
     },
     {
       id: 3,
-      name: "Stitch & Style",
+      name: "Coutour Collection",
       description: "Contemporary designs with personalized fitting services for the modern woman.",
       fullDescription: "Stitch & Style brings modern sensibility to traditional tailoring techniques. We create contemporary designs that reflect your personal style while ensuring the perfect fit. Our boutique specializes in everyday wear that feels special, business casual attire, and statement pieces that stand out in any setting.",
       image: "/women3.jpg",
@@ -72,7 +72,7 @@ const boutiquesData = {
     },
     {
       id: 4,
-      name: "Stitch & Style",
+      name: "Thread & Needle",
       description: "Contemporary designs with personalized fitting services for the modern woman.",
       fullDescription: "Stitch & Style brings modern sensibility to traditional tailoring techniques. We create contemporary designs that reflect your personal style while ensuring the perfect fit. Our boutique specializes in everyday wear that feels special, business casual attire, and statement pieces that stand out in any setting.",
       image: "/women4.webp",
@@ -93,7 +93,28 @@ const boutiquesData = {
     },
     {
       id: 5,
-      name: "Stitch & Style",
+      name: "Fashion Forward",
+      description: "Contemporary designs with personalized fitting services for the modern woman.",
+      fullDescription: "Stitch & Style brings modern sensibility to traditional tailoring techniques. We create contemporary designs that reflect your personal style while ensuring the perfect fit. Our boutique specializes in everyday wear that feels special, business casual attire, and statement pieces that stand out in any setting.",
+      image: "/women5.jpg",
+      gallery: ["/women.jpg", "/women1.avif", "/women.jpg"],
+      specialty: "Contemporary Fashion",
+      location: "Westside Shopping Center",
+      address: "456 Westside Boulevard, Fashion District",
+      phone: "(555) 234-5678",
+      email: "hello@stitchandstyle.com",
+      hours: "Mon-Sat: 10am-7pm, Sun: 12pm-5pm",
+      services: ["Ready-to-Wear Alterations", "Custom Designs", "Wardrobe Styling", "Personal Shopping", "Seasonal Collections"],
+      rating: 4.7,
+      reviews: [
+        { author: "Ava T.", rating: 5, comment: "Love my new custom blouses! Perfect fit and exactly the style I was looking for." },
+        { author: "Isabella M.", rating: 4, comment: "Great service and beautiful work. Slightly pricey but worth it for special items." },
+        { author: "Mia K.", rating: 5, comment: "The team at Stitch & Style truly understands how to enhance your personal style." }
+      ]
+    },
+    {
+      id: 6,
+      name: "Heritage Tailor",
       description: "Contemporary designs with personalized fitting services for the modern woman.",
       fullDescription: "Stitch & Style brings modern sensibility to traditional tailoring techniques. We create contemporary designs that reflect your personal style while ensuring the perfect fit. Our boutique specializes in everyday wear that feels special, business casual attire, and statement pieces that stand out in any setting.",
       image: "/women5.jpg",
