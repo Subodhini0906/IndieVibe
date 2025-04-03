@@ -13,7 +13,7 @@ const boutiquesData = {
       description: "Premium custom tailoring for women with a focus on elegant evening wear and business attire.",
       fullDescription: "Elegance Atelier offers a luxurious tailoring experience for the discerning woman. Our master tailors bring decades of experience to create garments that perfectly complement your style and physique. We specialize in evening wear, business attire, and special occasion ensembles using only the finest imported fabrics.",
       image: "/women1.avif",
-      gallery: ["/women1.avif", "/women.jpg", "/women1.avif"],
+      gallery: ["/women12.jpg", "/women.jpg", "/women13.jpg"],
       specialty: "Evening Wear & Business Attire",
       location: "Downtown Fashion District",
       address: "123 Fashion Avenue, Downtown",
