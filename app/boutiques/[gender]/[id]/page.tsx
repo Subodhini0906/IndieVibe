@@ -63,7 +63,7 @@ const boutiquesData = {
       email: "hello@stitchandstyle.com",
       hours: "Mon-Sat: 10am-7pm, Sun: 12pm-5pm",
       services: ["Ready-to-Wear Alterations", "Custom Designs", "Wardrobe Styling", "Personal Shopping", "Seasonal Collections"],
-      rating: 4.7,
+      rating: 4.9,
       reviews: [
         { author: "Ava T.", rating: 5, comment: "Love my new custom blouses! Perfect fit and exactly the style I was looking for." },
         { author: "Isabella M.", rating: 4, comment: "Great service and beautiful work. Slightly pricey but worth it for special items." },
@@ -84,7 +84,7 @@ const boutiquesData = {
       email: "hello@stitchandstyle.com",
       hours: "Mon-Sat: 10am-7pm, Sun: 12pm-5pm",
       services: ["Ready-to-Wear Alterations", "Custom Designs", "Wardrobe Styling", "Personal Shopping", "Seasonal Collections"],
-      rating: 4.7,
+      rating: 4.5,
       reviews: [
         { author: "Ava T.", rating: 5, comment: "Love my new custom blouses! Perfect fit and exactly the style I was looking for." },
         { author: "Isabella M.", rating: 4, comment: "Great service and beautiful work. Slightly pricey but worth it for special items." },
@@ -105,7 +105,7 @@ const boutiquesData = {
       email: "hello@stitchandstyle.com",
       hours: "Mon-Sat: 10am-7pm, Sun: 12pm-5pm",
       services: ["Ready-to-Wear Alterations", "Custom Designs", "Wardrobe Styling", "Personal Shopping", "Seasonal Collections"],
-      rating: 4.7,
+      rating: 4.6,
       reviews: [
         { author: "Ava T.", rating: 5, comment: "Love my new custom blouses! Perfect fit and exactly the style I was looking for." },
         { author: "Isabella M.", rating: 4, comment: "Great service and beautiful work. Slightly pricey but worth it for special items." },
@@ -126,7 +126,7 @@ const boutiquesData = {
       email: "hello@stitchandstyle.com",
       hours: "Mon-Sat: 10am-7pm, Sun: 12pm-5pm",
       services: ["Ready-to-Wear Alterations", "Custom Designs", "Wardrobe Styling", "Personal Shopping", "Seasonal Collections"],
-      rating: 4.7,
+      rating: 4.8,
       reviews: [
         { author: "Ava T.", rating: 5, comment: "Love my new custom blouses! Perfect fit and exactly the style I was looking for." },
         { author: "Isabella M.", rating: 4, comment: "Great service and beautiful work. Slightly pricey but worth it for special items." },
