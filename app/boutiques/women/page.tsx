@@ -33,7 +33,7 @@ const womensBoutiques = [
     image: "/women3.jpg",
     specialty: "Luxury Garments",
     location: "Fashion Avenue",
-    city: "New York",
+    city: "Mehraulli, New Delhi",
     rating: 4.9
   },
   {
@@ -43,7 +43,7 @@ const womensBoutiques = [
     image: "/women4.webp",
     specialty: "Alterations & Repairs",
     location: "Central Market District",
-    city: "Chicago",
+    city: "Bathinda Chowk, Punjab",
     rating: 4.5
   },
   {
@@ -53,7 +53,7 @@ const womensBoutiques = [
     image: "/women5.jpg",
     specialty: "Trendy Designs",
     location: "Innovation Fashion Hub",
-    city: "Miami",
+    city: "Indiranagar, Bengaluru",
     rating: 4.6
   },
   {
@@ -63,7 +63,7 @@ const womensBoutiques = [
     image: "/women11.jpg",
     specialty: "Cultural & Heritage Wear",
     location: "Historical District",
-    city: "Boston",
+    city: "PushpNagar, Pune",
     rating: 4.8
   }
 ];
