@@ -1,10 +1,10 @@
 "use client"
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-// Sample data for women's boutiques
+// Updated sample data for women's boutiques with city field
 const womensBoutiques = [
   {
     id: 1,
@@ -13,6 +13,7 @@ const womensBoutiques = [
     image: "/women1.avif",
     specialty: "Evening Wear & Business Attire",
     location: "Downtown Fashion District",
+    city: "New York",
     rating: 4.8
   },
   {
@@ -22,6 +23,7 @@ const womensBoutiques = [
     image: "/women11.jpg",
     specialty: "Contemporary Fashion",
     location: "Westside Shopping Center",
+    city: "Los Angeles",
     rating: 4.7
   },
   {
@@ -31,6 +33,7 @@ const womensBoutiques = [
     image: "/women3.jpg",
     specialty: "Luxury Garments",
     location: "Fashion Avenue",
+    city: "New York",
     rating: 4.9
   },
   {
@@ -40,6 +43,7 @@ const womensBoutiques = [
     image: "/women4.webp",
     specialty: "Alterations & Repairs",
     location: "Central Market District",
+    city: "Chicago",
     rating: 4.5
   },
   {
@@ -49,6 +53,7 @@ const womensBoutiques = [
     image: "/women5.jpg",
     specialty: "Trendy Designs",
     location: "Innovation Fashion Hub",
+    city: "Miami",
     rating: 4.6
   },
   {
@@ -58,11 +63,34 @@ const womensBoutiques = [
     image: "/women11.jpg",
     specialty: "Cultural & Heritage Wear",
     location: "Historical District",
+    city: "Boston",
     rating: 4.8
   }
 ];
 
 const WomensBoutiquesPage = () => {
+  // Use useEffect to handle client-side only code
+  const [mounted, setMounted] = useState(false);
+  const [selectedCity, setSelectedCity] = useState('All Cities');
+  const [filteredBoutiques, setFilteredBoutiques] = useState(womensBoutiques);
+  
+  // Get unique cities from data
+  const cities = ['All Cities', ...Array.from(new Set(womensBoutiques.map(boutique => boutique.city)))];
+
+  // Mark component as mounted after first render
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Filter boutiques when city selection changes
+  useEffect(() => {
+    if (selectedCity === 'All Cities') {
+      setFilteredBoutiques(womensBoutiques);
+    } else {
+      setFilteredBoutiques(womensBoutiques.filter(boutique => boutique.city === selectedCity));
+    }
+  }, [selectedCity]);
+
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
@@ -78,9 +106,30 @@ const WomensBoutiquesPage = () => {
           </p>
         </div>
         
+        {/* City Dropdown Filter - Only show when component is mounted */}
+        {mounted && (
+          <div className="max-w-xs mx-auto mb-10">
+            <label htmlFor="city-filter" className="block text-sm font-medium text-gray-700 mb-1">
+              Choose a city
+            </label>
+            <select
+              id="city-filter"
+              value={selectedCity}
+              onChange={(e) => setSelectedCity(e.target.value)}
+              className="block w-full rounded-md border border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 py-2 px-3"
+            >
+              {cities.map((city) => (
+                <option key={city} value={city}>
+                  {city}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
+        
         {/* Boutiques Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {womensBoutiques.map((boutique) => (
+          {(mounted ? filteredBoutiques : womensBoutiques).map((boutique) => (
             <div 
               key={boutique.id} 
               className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
@@ -109,7 +158,7 @@ const WomensBoutiquesPage = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                   </svg>
-                  {boutique.location}
+                  {boutique.location}{mounted ? `, ${boutique.city}` : ''}
                 </div>
                 <div className="mt-6">
                   <Link href={`/boutiques/women/${boutique.id}`}>
@@ -122,6 +171,19 @@ const WomensBoutiquesPage = () => {
             </div>
           ))}
         </div>
+        
+        {/* No results message - Only show when component is mounted */}
+        {mounted && filteredBoutiques.length === 0 && (
+          <div className="text-center py-10">
+            <p className="text-lg text-gray-600">No boutiques found in {selectedCity}.</p>
+            <button 
+              onClick={() => setSelectedCity('All Cities')}
+              className="mt-4 text-blue-600 hover:text-blue-800 font-medium"
+            >
+              View all boutiques
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
