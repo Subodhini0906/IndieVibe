@@ -13,7 +13,7 @@ const womensBoutiques = [
     image: "/women1.avif",
     specialty: "Evening Wear & Business Attire",
     location: "Downtown Fashion District",
-    city: "New York",
+    city: "Mayur Vihar, Delhi",
     rating: 4.8
   },
   {
@@ -23,7 +23,7 @@ const womensBoutiques = [
     image: "/women11.jpg",
     specialty: "Contemporary Fashion",
     location: "Westside Shopping Center",
-    city: "Los Angeles",
+    city: "Electronic City,phase I, Bengaluru",
     rating: 4.7
   },
   {
