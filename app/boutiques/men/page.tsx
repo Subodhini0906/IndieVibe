@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -63,11 +63,33 @@ const mensBoutiques = [
     image: "/men7.jpg",
     specialty: "Casual & Streetwear",
     location: "Downtown Promenade",
+    city:"chjsc",
     rating: 4.7
   }
 ];
 
 const MensBoutiquesPage = () => {
+  // Use useEffect to handle client-side only code
+  const [mounted, setMounted] = useState(false);
+  const [selectedCity, setSelectedCity] = useState('All Cities');
+  const [filteredBoutiques, setFilteredBoutiques] = useState(mensBoutiques);
+  
+  // Get unique cities from data
+  const cities = ['All Cities', ...Array.from(new Set(mensBoutiques.map(boutique => boutique.city)))];
+
+  // Mark component as mounted after first render
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Filter boutiques when city selection changes
+  useEffect(() => {
+    if (selectedCity === 'All Cities') {
+      setFilteredBoutiques(mensBoutiques);
+    } else {
+      setFilteredBoutiques(mensBoutiques.filter(boutique => boutique.city === selectedCity));
+    }
+  }, [selectedCity]);
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
@@ -82,10 +104,30 @@ const MensBoutiquesPage = () => {
             from bespoke suit crafting to expert alterations for all occasions.
           </p>
         </div>
+        {/* City Dropdown Filter - Only show when component is mounted */}
+        {mounted && (
+          <div className="max-w-xs mx-auto mb-10">
+            <label htmlFor="city-filter" className="block text-sm font-medium text-gray-700 mb-1">
+              Choose a city
+            </label>
+            <select
+              id="city-filter"
+              value={selectedCity}
+              onChange={(e) => setSelectedCity(e.target.value)}
+              className="block w-full rounded-md border border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 py-2 px-3"
+            >
+              {cities.map((city) => (
+                <option key={city} value={city}>
+                  {city}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
         
         {/* Boutiques Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {mensBoutiques.map((boutique) => (
+        {(mounted ? filteredBoutiques : mensBoutiques).map((boutique) => (
             <div 
               key={boutique.id} 
               className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
@@ -127,6 +169,17 @@ const MensBoutiquesPage = () => {
             </div>
           ))}
         </div>
+        {mounted && filteredBoutiques.length === 0 && (
+          <div className="text-center py-10">
+            <p className="text-lg text-gray-600">No boutiques found in {selectedCity}.</p>
+            <button 
+              onClick={() => setSelectedCity('All Cities')}
+              className="mt-4 text-blue-600 hover:text-blue-800 font-medium"
+            >
+              View all boutiques
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
