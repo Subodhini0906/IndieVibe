@@ -13,6 +13,7 @@ const mensBoutiques = [
     image: "/men.avif",
     specialty: "Bespoke Suits",
     location: "Financial District",
+    city: "Mayur Vihar, Delhi",
     rating: 4.9
   },
   {
@@ -22,6 +23,7 @@ const mensBoutiques = [
     image: "/men1.avif",
     specialty: "Contemporary Styling",
     location: "Arts District",
+    city: "karalk, Punjab",
     rating: 4.7
   },
   {
@@ -31,6 +33,7 @@ const mensBoutiques = [
     image: "/men5.jpg",
     specialty: "Traditional Craftsmanship",
     location: "Old Town Square",
+    city: "rojouri, Delhi",
     rating: 4.8
   },
   {
@@ -40,6 +43,7 @@ const mensBoutiques = [
     image: "/men6.jpg",
     specialty: "Business Attire",
     location: "Business Center",
+    city: "Indiranagar, Bengaluru",
     rating: 4.6
   },
   {
@@ -49,6 +53,7 @@ const mensBoutiques = [
     image: "/men1.webp",
     specialty: "Alterations & Repairs",
     location: "Central District",
+    city: "Gandhinagar",
     rating: 4.5
   },
   {
