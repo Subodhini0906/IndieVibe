@@ -456,7 +456,9 @@ const BoutiqueDetailsPage = () => {
               
               <div className="border-t border-gray-200 pt-6">
                 <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded transition-colors duration-300 mb-4">
-                  Book an Appointment
+                <Link href="/appointment/book" className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition text-center block">
+  Book an Appointment
+</Link>
                 </button>
                 <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-3 px-4 rounded transition-colors duration-300">
                   Contact Us
