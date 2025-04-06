@@ -10,7 +10,7 @@ const Navbar = async () => {
     <header className="px-4 py-5 bg-white shadow-sm font-work-sans">
       <nav className="flex justify-between items-center">
         <Link href="/">
-          <Image src="/logo1.jpg" alt="logo" width={100} height={100} priority/>
+          <Image src="/logo1.jpg" alt="logo" width={40} height={50} style={{ objectFit: 'contain' }}  priority/>
         </Link>
 
         <div className="flex items-center gap-5 text-black">
