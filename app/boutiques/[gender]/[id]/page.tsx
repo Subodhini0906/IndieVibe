@@ -246,7 +246,7 @@ const boutiquesData = {
       name: "Urban Threads",
       description: "Casual & Streetwear",
       fullDescription: "Modern Man brings fresh perspective to men's tailoring with contemporary designs that push boundaries while maintaining exceptional quality and fit. We specialize in helping men express their individuality through clothing that is as unique as they are, with a focus on versatile pieces that transition seamlessly from work to evening.",
-      image: "/men1.avif",
+      image: "/men7.jpg",
       gallery: ["/men1.avif", "/men.avif", "/men1.avif"],
       specialty: "Contemporary Styling",
       location: "Arts District",
