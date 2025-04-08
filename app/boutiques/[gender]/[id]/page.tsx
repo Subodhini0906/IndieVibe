@@ -142,7 +142,7 @@ const boutiquesData = {
       description: "Bespoke suits and formal wear crafted with precision and attention to detail.",
       fullDescription: "The Gentleman's Tailor is dedicated to the art of bespoke suit making. Our heritage techniques combined with modern precision ensure that each garment is a masterpiece of fit and style. We pride ourselves on creating timeless pieces that become the cornerstone of a distinguished wardrobe.",
       image: "/men.avif",
-      gallery: ["/men.avif", "/men1.avif", "/men.avif"],
+      gallery: ["/men11.jpeg", "/men12.webp", "/men13.jpg"],
       specialty: "Bespoke Suits",
       location: "Financial District",
       address: "789 Executive Row, Financial District",
