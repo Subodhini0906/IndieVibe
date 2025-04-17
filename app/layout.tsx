@@ -1,3 +1,4 @@
+import { ThemeProvider } from './context/ThemeContext';
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -59,7 +60,7 @@ export default function RootLayout({
       <body
         className={winkySans.variable}
       >
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
