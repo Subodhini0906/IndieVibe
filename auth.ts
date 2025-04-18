@@ -1,12 +1,21 @@
-// auth.ts (root level)
-import NextAuth from "next-auth"
-import GitHub from "next-auth/providers/github"
+// lib/auth.ts
+import GitHubProvider from "next-auth/providers/github";
+import { NextAuthOptions } from "next-auth";
 
-export const { handlers, auth, signIn, signOut } = NextAuth({
+export const authOptions: NextAuthOptions = {
   providers: [
-    GitHub({
-      clientId: process.env.GITHUB_ID || "",
-      clientSecret: process.env.GITHUB_SECRET || "",
+    GitHubProvider({
+      clientId: process.env.GITHUB_CLIENT_ID!,
+      clientSecret: process.env.GITHUB_CLIENT_SECRET!,
     }),
   ],
-});
+  pages: {
+    signIn: "/auth/signin", // optional: only if you want a custom signin page
+  },
+  callbacks: {
+    async session({ session }) {
+      // you can enrich session object here if needed
+      return session;
+    },
+  },
+};

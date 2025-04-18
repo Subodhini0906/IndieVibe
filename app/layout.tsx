@@ -1,4 +1,4 @@
-import { ThemeProvider } from './context/ThemeContext';
+// app/layout.tsx (server component)
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -44,23 +44,18 @@ const winkySans = localFont({
   variable: "--font-winky-sans",
 });
 
-
 export const metadata: Metadata = {
   title: "Seva 🙏 ",
   description: "stich your dress easily",
 };
 
 export default function RootLayout({
-  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body
-        className={winkySans.variable}
-      >
-        <ThemeProvider>{children}</ThemeProvider>
+      <body className={winkySans.variable}>
       </body>
     </html>
   );
