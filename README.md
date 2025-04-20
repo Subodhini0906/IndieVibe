@@ -38,12 +38,16 @@ Before you start, ensure you have the following installed:
    ```bash
    git clone https://github.com/your-username/subodhini0906-website.git
 2. **Navigate into the project folder**
+   ```bash
    cd subodhini0906-website
-3. **Install dependencies**:
+4. **Install dependencies**:
+   ```bash
    npm install
-4. **Run the development server**
+6. **Run the development server**
+   ```bash
    npm run dev
-5. **Open the application in your browser**
+8. **Open the application in your browser**
+   ```bash
    http://localhost:3000
 
 
