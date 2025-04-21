@@ -50,12 +50,14 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-}: Readonly<{
+  children,
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body className={winkySans.variable}>
+        {children}
       </body>
     </html>
   );

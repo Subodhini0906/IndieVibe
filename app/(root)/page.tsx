@@ -1,8 +1,8 @@
-
+"use client"
 import SearchForm from "../components/SearchForm";
 import Image from "next/image";
 import SliderSection from "../components/SliderSection";
-export default function page() {
+export default function Page() {
   return (
     <>
     <section className="relative w-full min-h-[330px] flex justify-center items-center flex-col py-10 px-6">

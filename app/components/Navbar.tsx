@@ -7,7 +7,7 @@ import { BadgePlus, LogOut } from "lucide-react";
 
 const Navbar = () => {
   const { data: session } = useSession();
-  
+
   return (
     <header className="px-4 py-5 bg-white shadow-sm font-work-sans">
       <nav className="flex justify-between items-center">
@@ -23,7 +23,7 @@ const Navbar = () => {
         </Link>
 
         <div className="flex items-center gap-5 text-black">
-         {session?.user ? (
+          {session?.user ? (
             <>
               <Link href="/startup/create">
                 <span className="max-sm:hidden">Create</span>
@@ -50,7 +50,6 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-      
     </header>
   );
 };

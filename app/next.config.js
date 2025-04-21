@@ -2,6 +2,7 @@
 const nextConfig = {
     experimental: {
       turbo: false,   // Disable Turbopack
+      appDir: true,
     }
   };
   
