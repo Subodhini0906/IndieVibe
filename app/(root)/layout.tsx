@@ -1,5 +1,4 @@
-'use client';
-
+"use client"
 import { ThemeProvider } from 'next-themes';
 import SessionProviderWrapper from '../components/SessionProviderWrapper';
 import Navbar from '../components/Navbar';
