@@ -56,7 +56,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={winkySans.variable}>
+      <body className={`${winkySans.variable} bg-white text-black dark:bg-white dark:text-black`}>
         {children}
       </body>
     </html>
