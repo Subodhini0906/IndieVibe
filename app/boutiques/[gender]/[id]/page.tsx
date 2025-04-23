@@ -460,9 +460,11 @@ const BoutiqueDetailsPage = () => {
   Book an Appointment
 </Link>
                 </button>
+                <Link href="/contact">
                 <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-3 px-4 rounded transition-colors duration-300">
                   Contact Us
                 </button>
+                </Link>
               </div>
             </div>
           </div>
