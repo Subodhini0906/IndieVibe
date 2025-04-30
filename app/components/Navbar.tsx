@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useSession, signOut, signIn } from "next-auth/react";
 import { BadgePlus, LogOut } from "lucide-react";
 
@@ -12,14 +11,7 @@ const Navbar = () => {
     <header className="px-4 py-5 bg-white shadow-sm font-work-sans">
       <nav className="flex justify-between items-center">
         <Link href="/">
-          <Image
-            src="/logo1.jpg"
-            alt="logo"
-            width={40}
-            height={50}
-            style={{ objectFit: 'contain' }}
-            priority
-          />
+          <p className="text-2xl font-extrabold font-serif">IndieVibe</p>
         </Link>
 
         <div className="flex items-center gap-5 text-black">
