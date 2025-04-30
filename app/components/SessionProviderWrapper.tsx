@@ -1,6 +1,4 @@
-// app/components/SessionProviderWrapper.tsx
-"use client"; // Mark this as a client-side component
-
+"use client";
 import { SessionProvider } from "next-auth/react";
 import React from "react";
 
