@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useSession, signOut, signIn } from "next-auth/react";
-import { BadgePlus, LogOut } from "lucide-react";
+import { LogOut } from "lucide-react";
 
 const Navbar = () => {
   const { data: session } = useSession();
@@ -17,17 +17,12 @@ const Navbar = () => {
         <div className="flex items-center gap-5 text-black">
           {session?.user ? (
             <>
-              <Link href="/startup/create">
-                <span className="max-sm:hidden">Create</span>
-                <BadgePlus className="size-6 sm:hidden" />
-              </Link>
-
               <button 
                 onClick={() => signOut({ redirect: true, callbackUrl: "/" })}
                 aria-label="Logout" 
                 className="flex items-center gap-2 text-red-500"
               >
-                <span className="max-sm:hidden">Logout</span>
+                <span className="max-sm:hidden font-bold">Logout</span>
                 <LogOut className="size-6 sm:hidden text-red-500" />
               </button>
             </>
