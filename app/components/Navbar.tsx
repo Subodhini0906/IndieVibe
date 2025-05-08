@@ -28,7 +28,7 @@ const Navbar = () => {
             </>
           ) : (
             <button 
-              onClick={() => signIn("github")}
+              onClick={() => signIn("google")}
               className="mx-4 px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-100" 
               aria-label="Login"
             >
